@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Mert Zemin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Üst Menü -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Mert Zemin Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hizmetlerimiz
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="fore-kazik.html">Fore Kazık</a></li>
+                                <li><a class="dropdown-item" href="iksa.html">İksa Uygulamaları</a></li>
+                                <li><a class="dropdown-item" href="mini-kazik.html">Mini Kazık</a></li>
+                                <li><a class="dropdown-item" href="mikro-kazik.html">Mikro Kazık</a></li>
+                                <li><a class="dropdown-item" href="zemin-iyilestirme.html">Zemin İyileştirme</a></li>
+                                <li><a class="dropdown-item" href="geoteknik.html">Geoteknik Projelendirme</a></li>
+                                <li><a class="dropdown-item" href="ankraj.html">Zemin Ankrajı</a></li>
+                                <li><a class="dropdown-item" href="jet-grout.html">Jet Grout</a></li>
+                                <li><a class="dropdown-item" href="zemin-civisi.html">Zemin Çivisi</a></li>
+                                <li><a class="dropdown-item" href="puskurtme-beton.html">Püskürtme Beton</a></li>
+                                <li><a class="dropdown-item" href="derin-karistirma.html">Derin Karıştırma</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">Hakkımızda</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- İletişim Bölümü -->
+    <section class="contact-page py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="section-title">İletişim Bilgileri</h2>
+                    <div class="contact-info mt-4">
+                        <div class="info-item mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Adres</h5>
+                                <p>Yavuzselim Mahallesi, 1950. Sokak No:65</p>
+                            </div>
+                        </div>
+                        <div class="info-item mb-4">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h5>Telefon</h5>
+                                <p>Ramazan Tapşık: +90 532 553 91 84</p>
+                                <p>Mehmet Can Tapşık: +90 534 589 62 02</p>
+                            </div>
+                        </div>
+                        <div class="info-item mb-4">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>E-posta</h5>
+                                <p>mertzemin34@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Harita -->
+                    <div class="map-container mt-4">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.1330760813713!2d28.9850366!3d41.0370023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7650656bd63%3A0x8ca058b28c20b6c3!2zVGFrc2ltIE1leWRhbsSxLCBHw7xtw7zFn3N1eXUsIDM0NDM1IEJleW_En2x1L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1710272547955!5m2!1str!2str"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h2 class="section-title">Bize Ulaşın</h2>
+                    <form action="https://formspree.io/f/xaneawdg" method="POST" class="contact-form mt-4">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Adınız Soyadınız</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-posta Adresiniz</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefon Numaranız</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mesajınız</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <!-- Footer içeriği -->
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
